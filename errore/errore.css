@@ -1,0 +1,330 @@
+body{
+    background-color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2{
+    color:brown;
+    margin-top: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: beige;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 50px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color:rgb(240, 123, 123);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.container .left-side{
+    text-align: center;
+}
+
+.container .left-side h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.container .left-side h1 .rojo{
+    color:brown;
+    font-family:'viga',serif;
+}
+
+.container .left-side p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.container .left-side a{
+    display:inline-block;
+    background: brown;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    color:white;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.container .right-side .box{
+    position: absolute;
+    display: grid;
+    right: 0%;
+    bottom: 0%;
+}
+.container .right-side .box img{
+    width: 18.5px;
+    margin: 10px;
+}
+.container .right-side .box img.facebook{
+    width: 18.5px;
+}
+
+.thumb{
+    display: flex;
+    margin-top: -2px;
+    justify-content: center;
+}
+
+.thumb a:hover{
+    margin-top: -10px;
+    transition: 0.2s;
+}
+
+.thumb img{
+    width: 54px;
+    margin: 20px;
+}
+
+body .container-2{
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap:35px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+body .container-2 .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.5);
+}
+
+body .container-2 .card .face{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container-2 .card .face.face1{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+body .container-2 .card .face.face1 h3{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+body .container-2 .card .face.face1 .Colombia{
+    background-color: #afaf83;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body .container-2 .card .face.face1 .Japon{
+    background-color: #afaf83;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body .container-2 .card .face.face1 .Italia{
+    background-color: #afaf83;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body .container-2 .card .face.face2{
+    transition: 0.5s;
+}
+
+body .container-2 .card .face.face2 h3{
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #3a3434;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+body .container-2 .card:hover .face.face2{
+    height: 60px;
+}
+
+body .container-2 .card:hover .face.face2 h3{
+    font-size: 2em;
+}
+
+body .container-2 .card:nth-child(1) .face.face2{
+    background-image: linear-gradient(40deg,#afaf83 0%,#afaf83 45%,#afaf83 100%);
+    border-radius: 15px;
+}
+
+body .container-2 .card:nth-child(2) .face.face2{
+    background-image: linear-gradient(40deg,#afaf83 0%,#afaf83 45%,#afaf83 100%);
+    border-radius: 15px;
+}
+
+body .container-2 .card:nth-child(3) .face.face2{
+    background-image: linear-gradient(40deg,#afaf83 0%,#afaf83 45%,#afaf83 100%);
+    border-radius: 15px;
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        overflow: hidden;
+    }
+
+    .container{
+        max-width: 80%;
+        margin: 50px auto;
+    }
+    
+    .container .left-side{
+        text-align: center;
+    }
+    
+    .container .left-side h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+    
+    .container .left-side h1 .rojo{
+        color:brown;
+        font-family:'viga',serif;
+    }
+    
+    .container .left-side p{
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+    
+    .container .left-side a{
+        display:inline-block;
+        background: brown;
+        padding: 12px 18px 12px 18px;
+        text-decoration: none;
+        border-radius: 25px;
+        color:white;
+        margin-top: 15px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .container .right-side .box{
+        position: absolute;
+        display: grid;
+        right: 0%;
+        bottom: 0%;
+    }
+    .container .right-side .box img{
+        width: 18.5px;
+        margin: 10px;
+    }
+    .container .right-side .box img.facebook{
+        width: 18.5px;
+    }
+    
+    .thumb{
+        display: flex;
+        margin-top: -2px;
+        justify-content: center;
+    }
+    
+    .thumb a:hover{
+        margin-top: -10px;
+        transition: 0.2s;
+    }
+    
+    .thumb img{
+        width: 54px;
+        margin: 20px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+}
+
+.image-container {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos {
+    max-width: 100%;
+    max-height: 100%;
+}
